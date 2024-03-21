@@ -1,0 +1,131 @@
+.sign-in {
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+    height: 1090px;
+}
+
+.content {
+    position: absolute;
+    left: 300px;
+}
+
+.logo1 {
+    position: absolute;
+    width: 19.88px;
+    height: 19.88px;
+    top: 74.83px;
+    background: #9C69E2;
+    border-radius: 20px;
+}
+
+.logo2 {
+    position: absolute;
+    width: 19.88px;
+    height: 34.78px;
+    left: 30px;
+    top: 59.93px;
+    background: #F063B8;
+    border-radius: 20px;
+}
+
+
+
+.title-sign {
+    position: absolute;
+    width: 278px;
+    height: 117px;
+    left: 505px;
+    top: 241px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    letter-spacing: 0.005em;
+    color: #000000;
+}
+
+.name {
+    width: 104px;
+    height: 30px;
+    left: 405px;
+    top: 386px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.005em;
+    color: #000000;
+}
+
+.input {
+    position: absolute;
+    width: 407px;
+    height: 57px;
+    left: 405px;
+    top: 458px;
+    background: #FDFDFD;
+    border: 1px solid #000000;
+    border-radius: 6px;
+}
+
+.btn-sign {
+    cursor: pointer;
+    position: absolute;
+    width: 413px;
+    height: 53px;
+    left: 405px;
+    top: 555px;
+    background: #9C69E2;
+    border-radius: 50px;
+    border: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #FFFFFF;
+}
+
+@media (max-width: 1000px) {
+    .content {
+        position: absolute;
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px 0;
+    }
+
+    .logo1,
+    .logo2 {
+        position: static;
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 992px) {
+    .content {
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .sign-in {
+        flex-direction: column;
+    }
+
+    .content {
+        position: static;
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px 0;
+    }
+}

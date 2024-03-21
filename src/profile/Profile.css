@@ -1,0 +1,254 @@
+.profile-main {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1920px;
+    height: 1090px;
+}
+
+.main-left {
+    width: 320px;
+    max-width: 30%;
+    height: 100%;
+    background: #D9D9D9;
+}
+
+.main-right {
+    flex: 1 1 calc(70% - 320px);
+    /* Điều chỉnh kích thước của main-right */
+    padding: 20px;
+    box-sizing: border-box;
+    /* Đảm bảo padding không ảnh hưởng đến kích thước */
+}
+
+@media (max-width: 1200px) {
+    .main-left {
+        max-width: 25%;
+    }
+
+    .main-right {
+        flex: 1 1 calc(75% - 320px);
+    }
+}
+
+@media (max-width: 992px) {
+    .main-left {
+        max-width: 20%;
+    }
+
+    .main-right {
+        flex: 1 1 calc(80% - 320px);
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-main {
+        flex-direction: column;
+    }
+
+    .main-left {
+        position: static;
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px 0;
+    }
+
+    .logo-main,
+    .logo-main2,
+    .main-left-post,
+    .main-left-logout {
+        position: static;
+    }
+
+    .main-right {
+        flex: 1 1 100%;
+        /* Đặt main-right chiếm toàn bộ chiều rộng */
+    }
+}
+
+.logo-main {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 100px;
+    top: 45px;
+    background: #9C69E2;
+    border-radius: 20px;
+
+}
+
+.logo-main2 {
+    position: absolute;
+    width: 20px;
+    height: 35px;
+    left: 129px;
+    top: 30px;
+    background: #F063B8;
+    border-radius: 20px;
+}
+
+.main-left-post {
+    position: absolute;
+    width: 53px;
+    height: 32px;
+    left: 34px;
+    top: 105px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+    color: #212353;
+}
+
+.main-left-logout {
+    position: absolute;
+    width: 67px;
+    height: 32px;
+    cursor: pointer;
+    left: 34px;
+    top: 167px;
+text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.005em;
+    color: #212353;
+}
+
+.span-btn {
+    cursor: pointer;
+    position: absolute;
+    width: 252.45px;
+    height: 58.53px;
+    left: 440px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 121px;
+    background: #9C69E2;
+    box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+    border-radius: 50px;
+}
+
+.form {
+    position: absolute;
+    left: 10px;
+    top: 300px;
+}
+
+.form-title {
+    position: absolute;
+    width: 50px;
+
+}
+.form input{
+    margin-left: 50px;
+}
+
+.save-data {
+    background: #9C69E2;
+    border: none;
+    margin-left: 80px;
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.add {
+    position: absolute;
+    width: 94.35px;
+    left: 88px;
+    height: 25.52px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    /* identical to box height, or 26px */
+    align-items: center;
+    letter-spacing: 0.005em;
+    color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+    .span-btn {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .span-btn {
+        max-width: 90%;
+    }
+}
+
+.table {
+    position: absolute;
+    width: 1056px;
+    height: 49.08px;
+    left: 440px;
+    top: 214.26px;
+    background: #D9D9D9;
+    border: 1px solid #000000;
+    border-collapse: collapse;
+    overflow-x: auto;
+}
+
+.table tr {
+    height: 50px;
+}
+
+.table th {
+    border: 1px solid #000000;
+    padding: 8px;
+    white-space: nowrap;
+}
+
+.table td {
+    border: 1px solid #000000;
+    padding: 8px;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.table button {
+    height: 25px;
+    margin: 2px;
+}
+
+@media (max-width: 1200px) {
+    .table {
+        margin-left: 20px;
+        margin-right: 20px;
+        width: calc(100% - 40px);
+    }
+}
+
+@media (max-width: 768px) {
+    .table {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: calc(100% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .table {
+        margin-left: 5px;
+        margin-right: 5px;
+        width: calc(100% - 10px);
+    }
+}
